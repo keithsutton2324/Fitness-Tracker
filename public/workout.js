@@ -8,7 +8,10 @@ async function initWorkout() {
 
     const workoutSummary = {
       date: formatDate(lastWorkout.day),
-      totalDuration: lastWorkout.totalDuration,
+      // KJS displays undefined, set it to zero for now
+      //totalDuration: lastWorkout.totalDuration,
+       totalDuration: 0,
+
       numExercises: lastWorkout.exercises.length,
       ...tallyExercises(lastWorkout.exercises)
     };
