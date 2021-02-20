@@ -10,12 +10,16 @@ const ExerciseSchema = new Schema({
     exercises: [
         {
             type: {type: String},
+            cardioform: {type: String},
+            resistanceform: {type: String},
+            cardioname: {type: String},
             name: {type: String},
-            duration: {type: Number},
             weight: {type: Number},
-            reps: {type: Number};
-            sets: {type: Number};
-            distance: {type: Number};
+            sets: {type: Number},
+            reps: {type: Number},
+            duration: {type: Number},
+            resistanceduration: {type: Number},
+            distance: {type: Number},
         }
     ]
 });
