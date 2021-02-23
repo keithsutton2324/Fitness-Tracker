@@ -19,6 +19,7 @@ const ExerciseSchema = new Schema({
             reps: {type: Number},
             duration: {type: Number},
             resistanceduration: {type: Number},
+            cardioduration: {type: Number},
             distance: {type: Number},
         }
     ]

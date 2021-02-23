@@ -11,9 +11,7 @@ const API = {
     return json[json.length - 1];
   },
   async addExercise(data) {
-    // KJS not sure what is going on with id. setting it to 1 makes it work for now
-    //const id = location.search.split("=")[1];
-    const id = 1;
+    const id = location.search.split("=")[1];
 
     const res = await fetch("/api/workouts/" + id, {
       method: "PUT",
